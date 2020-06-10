@@ -2,10 +2,6 @@
 
 The purpose of this application is to help coordinate volunteers by creating a scheduling management framework.
 
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
 ### Prerequisites
 
 Before you get started, make sure you have the following software installed on your computer:
@@ -14,20 +10,23 @@ Before you get started, make sure you have the following software installed on y
 - [PostrgeSQL](https://www.postgresql.org/)
 - [Nodemon](https://nodemon.io/)
 
-Create a new database in postgreSQL called `we-can-ride` and create the given tables using the database.sql file.
+## Getting Started
 
-### Installing
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-* Run `npm install`
-* Create a `.env` file at the root of the project and paste this line into the file:
+1. Create a new database in postgreSQL called `we-can-ride` and create the given tables using the database.sql file.  This allows you to store and retrieve data.
+2. Run `npm install` in the terminal to add the necessary dependencies.
+3. Create a `.env` file at the root of the project and paste this line into the file:
     ```
     SERVER_SESSION_SECRET=superDuperSecret
     ```
     While you're in your new `.env` file, take the time to replace `superDuperSecret` with some long random string like `25POUbVtx6RKVNWszd9ERB9Bb6` to keep your application secure. Here's a site that can help you: [https://passwordsgenerator.net/](https://passwordsgenerator.net/). If you don't do this step, create a secret with less than eight characters, or leave it as `superDuperSecret`, you will get a warning.
-* Start postgres if not running already by using `brew services start postgresql`
-* Run `npm run server`
-* Run `npm run client`
-* Navigate to `localhost:3000`
+4. Start postgres if not running already by using `brew services start postgresql`
+5. Run `npm run server`
+6. Run `npm run client`
+7. Navigate to `localhost:3000`
+8. Use the provided username/password for initial login, after which we recommend changing your password.
+
 
 ## Authors
 
